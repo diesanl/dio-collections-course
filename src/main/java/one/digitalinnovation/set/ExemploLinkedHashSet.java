@@ -10,10 +10,10 @@ public class ExemploLinkedHashSet {
         LinkedHashSet<Integer> sequenciaNumerica = new LinkedHashSet<>();
 
         // Adiciona os numeros no set
-        sequenciaNumerica.add(16);
-        sequenciaNumerica.add(2);
         sequenciaNumerica.add(8);
+        sequenciaNumerica.add(2);
         sequenciaNumerica.add(4);
+        sequenciaNumerica.add(16);
         sequenciaNumerica.add(1);
 
         System.out.println(sequenciaNumerica);

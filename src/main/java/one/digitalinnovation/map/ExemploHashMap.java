@@ -19,6 +19,10 @@ public class ExemploHashMap {
         campeoesMundialFifa.put("Inglaterra", 1);
         campeoesMundialFifa.put("Espanha", 1);
 
+        System.out.println(campeoesMundialFifa.get("India"));
+        campeoesMundialFifa.put(null, 2);
+        System.out.println(campeoesMundialFifa.get(1));;
+
         System.out.println(campeoesMundialFifa);
 
         // Atualiza o valor para a chave Brasil
