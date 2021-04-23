@@ -15,8 +15,6 @@ public class ExercicioStream {
 
 //        System.out.println(frutas.stream().collect(Collectors.groupingBy(fruta -> fruta.substring(0, 1))));
 
-        System.out.println(frutas.stream().map(fruta -> fruta + " - " + (fruta.length() * 2).collect(Collectors.toList()));
-
         // Adiciona estudantes para a coleção
         estudantes.add(new Estudante("Pedro", 30));
         estudantes.add(new Estudante("Thayse", 31));
