@@ -21,7 +21,7 @@ public class ExemploOptionalEstados {
         System.out.println("Valor opcional que não está presente");
         emptyOptional.ifPresentOrElse(System.out::println, () -> System.out.println("empty = não está presente"));
 
-        Optional<String> optionalNullErro = Optional.of(null);
+        Optional<String> optionalNullErro = Optional.ofNullable(null);
 
         System.out.println("Valor opcional que lança erro NullPointerException");
         optionalNullErro.ifPresentOrElse(System.out::println, () -> System.out.println("erro = não está presente"));

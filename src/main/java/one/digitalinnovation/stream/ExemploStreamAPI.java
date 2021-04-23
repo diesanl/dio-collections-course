@@ -56,10 +56,10 @@ public class ExemploStreamAPI {
         estudantes.stream().forEach(System.out::println);
 
         // Retorna true se todos os elementos possuem a letra W no nome
-        System.out.println("Tem algum elemento com W no nome? " + estudantes.stream().allMatch((elemento) -> elemento.contains("W")));
+        System.out.println("Todos elementos com W no nome? " + estudantes.stream().allMatch((elemento) -> elemento.contains("W")));
 
         // Retorna true se algum os elementos possuem a letra a minúscula no nome
-        System.out.println("Tem algum elemento com a minúscula no nome? " + estudantes.stream().anyMatch((elemento) -> elemento.contains("a")));
+        System.out.println("Tem algum elemento com letra 'a' minúscula no nome? " + estudantes.stream().anyMatch((elemento) -> elemento.contains("a")));
 
         // Retorna true se nenhum elemento possue a letra a minúscula no nome
         System.out.println("Não tem nenhum elemento com a minúscula no nome? " + estudantes.stream().noneMatch((elemento) -> elemento.contains("a")));
@@ -78,11 +78,11 @@ public class ExemploStreamAPI {
                            .peek(System.out::println)
                            .filter((estudante) ->
                                 estudante.toLowerCase().contains("r"))
-                           .collect(Collectors.toList()));
+//                           .collect(Collectors.toList()));
 //                         .collect(Collectors.joining(", ")));
 //                         .collect(Collectors.toSet()));
-//                         .collect(Collectors.groupingBy(estudante -> estudante.substring(estudante.indexOf("-") + 1)))
-//                             );
+                         .collect(Collectors.groupingBy(estudante -> estudante.substring(estudante.indexOf("-") + 1)))
+                             );
 
     }
 
